@@ -114,7 +114,7 @@ function HandleSubmenus(systemName, idSubmenu, isMainMenu = false) {
         `
             <h3>${_submenu.name}</h3>
             <small>Módulo de ${_submenu.name} do sistema ${systemName}</small>
-            <div class="row">        
+            <div class="row fade-in">        
                 ${_submenu.submenus.map(item => {
                     return `
                         <div class="col-6 col-sm-4 col-md-3 p-2">
