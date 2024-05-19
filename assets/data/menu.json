@@ -1,0 +1,175 @@
+{
+    "data": [
+        {
+            "system": "simed",
+            "menus": [
+                {
+                    "id": 5,
+                    "name": "Cadastros",
+                    "icon": "fa-solid fa-plus",
+                    "submenus": [
+                        {
+                            "name": "Cliente",
+                            "description": "Información general de la aplicación",
+                            "url": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+                            "icon": "fa-solid fa-user"
+                        },
+                        {
+                            "name": "Fornecedor",
+                            "description": "Información general de la aplicación",
+                            "url": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+                            "icon": "fa-solid fa-truck"
+                        },
+                        {
+                            "name": "Vendedor",
+                            "description": "Información general de la aplicación",
+                            "url": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+                            "icon": "fa-solid fa-user-tie"
+                        },
+                        {
+                            "name": "Agência",
+                            "description": "Información general de la aplicación",
+                            "url": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+                            "icon": "fa-solid fa-store"
+                        }
+                    ]
+                },
+                {
+                    "id": 1,
+                    "name": "Anuncios",
+                    "icon": "fa-regular fa-file-lines pe-2",
+                    "submenus": [
+                        {
+                            "name": "",
+                            "description": "Información general de la aplicación",
+                            "url": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+                            "icon": "fa-regular fa-file-lines pe-2"
+                        }
+                    ]
+                },
+                {
+                    "id": 2,
+                    "name": "Consultas",
+                    "icon": "fa-solid fa-magnifying-glass",
+                    "submenus": [
+                        {
+                            "name": "",
+                            "description": "Información general de la aplicación",
+                            "url": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+                            "icon": "fa-solid fa-sliders pe-2"
+                        }
+                    ]
+                },
+                {
+                    "id": 3,
+                    "name": "Relatórios",
+                    "icon": "fa-solid fa-list pe-2",
+                    "submenus": [
+                        {
+                            "name": "",
+                            "description": "Información general de la aplicación",
+                            "url": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+                            "icon": "fa-solid fa-list pe-2"
+                        }
+                    ]
+                },
+                {
+                    "id": 4,
+                    "name": "Faturamento",
+                    "icon": "fa-solid fa-sliders pe-2",
+                    "submenus": [
+                        {
+                            "name": "",
+                            "description": "Información general de la aplicación",
+                            "url": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+                            "icon": "fa-solid fa-sliders pe-2"
+                        }
+                    ]
+                },
+                
+                {
+                    "id": 6,
+                    "name": "Arquivos",
+                    "icon": "fa-regular fa-file",
+                    "submenus": [
+                        {
+                            "name": "",
+                            "description": "Información general de la aplicación",
+                            "url": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+                            "icon": "fa-regular fa-file"
+                        }
+                    ]
+                },
+                {
+                    "name": "Útil",
+                    "icon": "fa-solid fa-circle-info",
+                    "submenus": [
+                        {
+                            "name": "",
+                            "description": "Información general de la aplicación",
+                            "url": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+                            "icon": "fa-solid fa-circle-info"
+                        }
+                    ]
+                },
+                {
+                    "id": 7,
+                    "name": "Sobre",
+                    "icon": "fa-regular fa-bookmark",
+                    "submenus": [
+                        {
+                            "name": "",
+                            "description": "Información general de la aplicación",
+                            "url": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+                            "icon": "fa-regular fa-bookmark"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "system": "simfi",
+            "menus": [
+                {
+                    "id": 1,
+                    "name": "Consultas",
+                    "icon": "fa-solid fa-magnifying-glass",
+                    "submenus": [
+                        {
+                            "name": "",
+                            "description": "Información general de la aplicación",
+                            "url": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+                            "icon": "fa-solid fa-sliders pe-2"
+                        }
+                    ]
+                },
+                {
+                    "id": 2,
+                    "name": "Relatórios",
+                    "icon": "fa-solid fa-list pe-2",
+                    "submenus": [
+                        {
+                            "name": "",
+                            "description": "Información general de la aplicación",
+                            "url": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+                            "icon": "fa-solid fa-sliders pe-2"
+                        }
+                    ]
+                },
+                {
+                    "id": 3,
+                    "name": "Faturamento",
+                    "icon": "fa-solid fa-sliders pe-2",
+                    "submenus": [
+                        {
+                            "name": "",
+                            "description": "Información general de la aplicación",
+                            "url": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+                            "icon": "fa-solid fa-sliders pe-2"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

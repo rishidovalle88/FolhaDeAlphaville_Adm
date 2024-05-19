@@ -18,7 +18,7 @@ h3 {
 
 a {
     cursor: pointer;
-    text-decoration: none;
+    text-decoration: none !important;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -59,7 +59,7 @@ li {
 }
 
 .sidebar-logo {    
-    padding: 1.15rem 1.5rem;
+    padding: .7rem 1.5rem;
 }
 
 .sidebar-logo a {
@@ -125,4 +125,12 @@ a i {
     .content {
         width: auto;
     }
+}
+
+.animation-selected:hover {
+    transition: .2s;
+    transform: scale(1.02);
+    box-shadow: 2px 0px 12px 5px rgba(204, 195, 195, 0.59);
+    -webkit-box-shadow: 2px 0px 12px 5px rgba(204, 195, 195, 0.59);
+    -moz-box-shadow: 2px 0px 12px 5px rgba(204, 195, 195, 0.59);
 }
