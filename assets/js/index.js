@@ -1,6 +1,10 @@
 const toggler = document.querySelectorAll(".menu-toggle");
 toggler.forEach(item => {
     item.addEventListener("click", function () {
+        if(isMobileResolution()){
+            HandleMainMenu();
+            return;
+        }
         document.querySelector("#sidebar").classList.toggle("collapsed");
     });
 }); 
@@ -72,7 +76,7 @@ function HandleMainMenu() {
                             return `
                                 <div class="col-6 col-sm-4 col-md-3 p-2">
                                     <div class="card animation-selected">
-                                        <a href="#" class="text-decoration-none" onclick="HandleSubmenus('${item.system}', ${submenu.id})">
+                                        <a href="#" class="text-decoration-none" onclick="HandleSubmenus('${item.system}', ${submenu.id}, true)">
                                             <div class="card-body lh-1">
                                                 <i class="${submenu.icon} mb-5"></i>
                                                 <h6 class="card-title">${submenu.name}</h6>
@@ -93,7 +97,7 @@ function HandleMainMenu() {
 }
 
 
-function HandleSubmenus(systemName, idSubmenu) {
+function HandleSubmenus(systemName, idSubmenu, isMainMenu = false) {
 
     const _menu = menu.data.find(item => item.system === systemName);
     const _submenu = _menu.menus.find(item => item.id === idSubmenu);
@@ -102,7 +106,7 @@ function HandleSubmenus(systemName, idSubmenu) {
     if (!_submenu)
         return null;
 
-    if(isMobileResolution()){
+    if(isMobileResolution() && !isMainMenu){
         toggleSidebar();    
     }
 
