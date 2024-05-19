@@ -70,8 +70,9 @@ function HandleMainMenu() {
         `
             ${menu.data.map(item => {
                 return `                    
-                    <div class="row mb-3">  
+                    <div class="row mb-4">  
                         <h3>${item.system}</h3>
+                        <small class="fw-ligth">O que deseja fazer?</small>
                         ${item.menus.map(submenu => {
                             return `
                                 <div class="col-6 col-sm-4 col-md-3 p-2">
