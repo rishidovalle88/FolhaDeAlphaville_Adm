@@ -7,7 +7,7 @@ toggler.forEach(item => {
 
 
 function isMobileResolution() {
-    return window.innerWidth > 768; // Defina o limite de largura para considerar como dispositivo móvel
+    return window.innerWidth <= 768; // Defina o limite de largura para considerar como dispositivo móvel
 }
 
 // Função para alternar a classe "collapsed" no elemento com o ID "sidebar"
@@ -18,7 +18,7 @@ function toggleSidebar() {
 
 // Verifica a resolução ao carregar a página
 window.addEventListener("load", function () {
-    if (isMobileResolution()) {
+    if (!isMobileResolution()) {
         toggleSidebar();
     }
 });
@@ -101,6 +101,10 @@ function HandleSubmenus(systemName, idSubmenu) {
 
     if (!_submenu)
         return null;
+
+    if(isMobileResolution()){
+        toggleSidebar();    
+    }
 
     const el = (
         `
