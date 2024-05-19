@@ -25,6 +25,10 @@ window.addEventListener("load", function () {
     if (!isMobileResolution()) {
         toggleSidebar();
     }
+    else {
+        const btn_menu = document.querySelector("#btn_menu");
+        btn_menu.classList.toggle("d-none");
+    }
 });
 
 
@@ -70,7 +74,7 @@ function HandleMainMenu() {
         `
             ${menu.data.map(item => {
                 return `                    
-                    <div class="row mb-4">  
+                    <div class="row mb-4">
                         <h3>${item.system}</h3>
                         <small class="fw-ligth">O que deseja fazer?</small>
                         ${item.menus.map(submenu => {
@@ -113,6 +117,10 @@ function HandleSubmenus(systemName, idSubmenu, isMainMenu = false) {
 
     const el = (
         `
+            <button type="button" class="btn btn-sm d-flex align-items-center gap-2 mb-4" onclick="HandleMainMenu()">
+                <i class="fa-solid fa-chevron-left"></i>
+                voltar ao menu inicial
+            </button>
             <h3>${_submenu.name}</h3>
             <small>Módulo de ${_submenu.name} do sistema ${systemName}</small>
             <div class="row fade-in">        
