@@ -117,10 +117,10 @@ function HandleSubmenus(systemName, idSubmenu, isMainMenu = false) {
 
     const el = (
         `
-            <button type="button" class="btn btn-sm d-flex align-items-center gap-2 mb-4" onclick="HandleMainMenu()">
+            <a type="button" class="d-flex align-items-center gap-1 mb-4" onclick="HandleMainMenu()">
                 <i class="fa-solid fa-chevron-left"></i>
                 voltar ao menu inicial
-            </button>
+            </a>
             <h3>${_submenu.name}</h3>
             <small>Módulo de ${_submenu.name} do sistema ${systemName}</small>
             <div class="row fade-in">        
