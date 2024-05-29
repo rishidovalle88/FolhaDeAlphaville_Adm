@@ -1,3 +1,17 @@
+var menu = {};
+
+
+fetch("https://rishidovalle88.github.io/FolhaDeAlphaville_Adm/assets/data/menu.json").then(
+    response => response.json()
+)
+    .then(data => {
+        menu = data
+        side_root.innerHTML = HandleSideMenu();
+        HandleMainMenu();
+    });
+
+
+
 const toggler = document.querySelectorAll(".menu-toggle");
 toggler.forEach(item => {
     item.addEventListener("click", function () {
@@ -32,14 +46,7 @@ window.addEventListener("load", function () {
 });
 
 
-fetch("../assets/data/menu.json").then(
-    response => response.json()
-)
-    .then(data => {
-        menu = data
-        side_root.innerHTML = HandleSideMenu();
-        HandleMainMenu();
-    });
+
 
 const root = document.querySelector("#root");
 
@@ -138,14 +145,65 @@ function HandleSubmenus(systemName, idSubmenu, isMainMenu = false) {
                         </div>
                         `
                     }).join("")
-                }        
+                }
+            </div>
+            <div class="row p-2">
+                <div class="card col-12 col-sm-6">                    
+                    <div class="card-body d-flex flex-column gap-4">
+                        <h5 class="card-title">Clientes por periodo</h5>
+                        <canvas id="bar"></canvas>                    
+                    </div>
+                </div>
+                <div class="card col-12 col-sm-6">                    
+                    <div class="card-body d-flex flex-column gap-4">
+                        <h5 class="card-title">Clientes por periodo</h5>
+                        <canvas id="line"></canvas>                    
+                    </div>
+                </div>
+
+                <div class="card col-12">                    
+                    <div class="card-body d-flex flex-column gap-4">
+                        <h5 class="card-title">Clientes por periodo</h5>
+                        <canvas id="pie"></canvas>                    
+                    </div>
+                </div>
             </div>
         `
     )
     BuildRoot(el);
-
+    ChartHandler("bar", null, "bar");
+    ChartHandler("pie", null, "pie");
+    ChartHandler("line", null, "line");
 }
 
 function BuildRoot(el) {
     root.innerHTML = el;
+}
+
+function ChartHandler(elId, data, type) {
+    const ctx = document.getElementById(elId);
+
+    new Chart(ctx, {
+      type: type,
+      data: {
+        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange', 'white'],
+        datasets: [{
+          label: 'Ativos',
+          data: [12, 19, 3, 5, 2, 3, 80],
+          borderWidth: 1
+        },{
+            label: 'Inativos',
+            data: [12, 19, 3, 5, 2, 3, 30],
+            borderWidth: 1
+          }]
+      },
+      options: {
+        responsive: true,
+        scales: {
+          y: {
+            beginAtZero: true
+          }
+        }
+      }
+    });
 }
