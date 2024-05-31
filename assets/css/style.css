@@ -148,9 +148,12 @@ a i {
     }
 }
 
+.animation-selected {
+    transition: .2s ease-in-out;
+}
 .animation-selected:hover {
+    transition: .2s ease-in-out;
     transform: scale(1.02);
-    transition: .2s all ease-in-out;
     box-shadow: 2px 0px 12px 5px rgba(204, 195, 195, 0.59);
     -webkit-box-shadow: 2px 0px 12px 5px rgba(204, 195, 195, 0.59);
     -moz-box-shadow: 2px 0px 12px 5px rgba(204, 195, 195, 0.59);
